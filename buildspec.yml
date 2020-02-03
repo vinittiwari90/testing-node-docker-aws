@@ -14,7 +14,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - docker login -u AWS -p impetus22 063505748811.dkr.ecr.us-east-2.amazonaws.com
+      - docker login -u AWS -p Impetus22 063505748811.dkr.ecr.us-east-2.amazonaws.com
       - docker build -t 063505748811.dkr.ecr.us-east-2.amazonaws.com/testing-repo-vinit-2:latest .
       - docker tag 063505748811.dkr.ecr.us-east-2.amazonaws.com/testing-repo-vinit-2:latest 063505748811.dkr.ecr.us-east-2.amazonaws.com/testing-repo-vinit-2:$IMAGE_TAG
   post_build:
